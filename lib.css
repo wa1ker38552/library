@@ -30,3 +30,13 @@ button {
 .centered-horizontally, .centered-children {
   justify-content: center;
 }
+
+.gap {
+  height: 0.5rem;
+}
+
+.break {
+  height: 1rem;
+}
+  
+}
