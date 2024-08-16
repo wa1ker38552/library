@@ -10,10 +10,12 @@ h1, h2, h3, h4 {
 
 input {
   outline: 0;
+  font-size: 1rem;
 }
 
 button {
   cursor: pointer;
+  font-size: 1rem;
 }
 
 .centered-children, .centered-vertically, .centered-horizontally {
