@@ -8,3 +8,8 @@ function dcreate(tag, className=null, innerHTML=null) {
   if (innerHTML) {e.innerHTML = innerHTML}
   return e
 }
+
+async request(url) {
+  const _ = await fetch(url)
+  return await _.json()
+}
