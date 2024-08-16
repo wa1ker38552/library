@@ -9,7 +9,7 @@ function dcreate(tag, className=null, innerHTML=null) {
   return e
 }
 
-async request(url) {
+async function request(url) {
   const _ = await fetch(url)
   return await _.json()
 }
