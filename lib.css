@@ -1,0 +1,19 @@
+input {
+  outline: 0;
+}
+
+button {
+  cursor: pointer;
+}
+
+.centered-children, .centered-vertically, .centered-horizontally {
+  display: flex;
+}
+
+.centered-vertically, .centered-children {
+  align-items: center;
+}
+
+.centered-horizontally, .centered-children {
+  justify-content: center;
+}
