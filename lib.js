@@ -30,3 +30,13 @@ function animateCloseModal(m) {
   m.style.animation = "fade-out 0.3s"
   m.style.opacity = 0
 }
+
+class random {
+    static choice(list) {
+        return list[Math.floor(Math.random() * list.length)]
+    }
+
+    static randint(a, b) {
+        return Math.floor(Math.random() * (b - a + 1)) + a
+    }
+}
