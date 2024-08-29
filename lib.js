@@ -31,6 +31,12 @@ function animateCloseModal(m) {
   m.style.opacity = 0
 }
 
+class time {
+  static sleep(millis) {
+    return new Promise(resolve => setTimeout(resolve, ms));
+  }
+}
+
 class random {
     static choice(list) {
         return list[Math.floor(Math.random() * list.length)]
