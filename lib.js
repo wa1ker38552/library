@@ -32,17 +32,19 @@ function animateCloseModal(m) {
 }
 
 class time {
+  // time related things
   static sleep(millis) {
     return new Promise(resolve => setTimeout(resolve, millis));
   }
 }
 
 class random {
-    static choice(list) {
-        return list[Math.floor(Math.random() * list.length)]
-    }
+  // basically the random module in python
+  static choice(list) {
+      return list[Math.floor(Math.random() * list.length)]
+  }
 
-    static randint(a, b) {
-        return Math.floor(Math.random() * (b - a + 1)) + a
-    }
+  static randint(a, b) {
+      return Math.floor(Math.random() * (b - a + 1)) + a
+  }
 }
