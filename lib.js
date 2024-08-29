@@ -33,7 +33,7 @@ function animateCloseModal(m) {
 
 class time {
   static sleep(millis) {
-    return new Promise(resolve => setTimeout(resolve, ms));
+    return new Promise(resolve => setTimeout(resolve, millis));
   }
 }
 
