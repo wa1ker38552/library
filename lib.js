@@ -14,6 +14,11 @@ async function request(url) {
   return await _.json()
 }
 
+async function requestRaw(url) {
+  const _ = await fetch(url)
+  return _
+}
+
 function animateOpenModal(m) {
   m.style.display = ""
   m.style.opacity = "1"
