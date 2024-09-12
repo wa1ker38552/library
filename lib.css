@@ -49,6 +49,12 @@ button {
   top: 0;
 }
 
+.modal {
+  width: 30rem;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
 @keyframes fade-in {
   from {opacity: 0;}
   to {opacity: 1;}
