@@ -53,6 +53,7 @@ button {
   width: 30rem;
   padding: 1rem;
   box-sizing: border-box;
+  z-index: 9999;
 }
 
 @keyframes fade-in {
