@@ -1,0 +1,100 @@
+@import url("/lib.css");
+
+:root {
+    --background: #ffffff;
+    --secondary: #bebebe;
+    --secondary-dark: #f4f4f4;
+    --accent: #1e90ff;
+    --accent-hover: #54aaff;
+    --accent-light: #b8dbff;
+    --accent-light-hover: #cde6ff;
+    --text: #3c3c3c;
+}
+
+body {
+    background: var(--background);
+}
+
+button {
+    padding: 0.5rem 1rem;
+    border: solid 1px var(--secondary);
+    border-radius: 5px;
+    transition: 0.3s ease-in-out;
+    color: var(--secondary);
+    background: var(--secondary-dark);
+}
+
+button:hover:not(.primary-button, .primary-button-solid, .secondary-button) {
+    border-color: var(--text);
+    color: var(--text);
+}
+
+.primary-button {
+    background: var(--accent-light);
+    border-color: var(--accent);
+    color: var(--accent);
+}
+
+.primary-button:hover {
+    background: var(--accent-light-hover);
+}
+
+.primary-button-solid {
+    border-color: var(--accent);
+    background: var(--accent);
+    color: var(--background);
+}
+
+.primary-button-solid:hover {
+    background: var(--accent-hover);
+    border-color: var(--accent-hover);
+}
+
+.secondary-button {
+    border-color: var(--accent);
+    background: transparent;
+    color: var(--accent);
+}
+
+.secondary-button:hover {
+    border-color: var(--accent-hover);
+    color: var(--accent-hover);
+}
+
+input {
+    border-radius: 5px;
+    border: solid 1px var(--secondary);
+    padding: 0.5rem;
+    font-size: 0.9rem;
+    width: 100%;
+    transition: 0.3s ease-in-out;
+}
+
+input:focus {
+    border-color: var(--text);
+}
+
+.rounded-input {
+    border-radius: 5rem;
+    padding: 0.5rem 1rem;
+}
+
+.label {
+    font-size: 0.8rem;
+}
+
+.embed {
+    border: solid 1px var(--secondary);
+    border-width: 1px 1px 1px 5px;
+    border-radius: 5px;
+    padding: 0.5rem;
+    box-sizing: border-box;
+}
+
+a {
+    color: var(--accent);
+}
+
+a:hover {
+    text-decoration: underline;
+}

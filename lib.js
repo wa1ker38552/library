@@ -53,3 +53,9 @@ class random {
       return Math.floor(Math.random() * (b - a + 1)) + a
   }
 }
+
+class requests {
+  async get(url) {
+    return request(url)
+  }
+}
