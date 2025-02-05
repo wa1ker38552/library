@@ -29,6 +29,10 @@ button:hover:not(.primary-button, .primary-button-solid, .secondary-button) {
     color: var(--text);
 }
 
+.accent {
+    color: var(--accent);
+}
+
 .primary-button {
     background: var(--accent-light);
     border-color: var(--accent);

@@ -59,3 +59,23 @@ class requests {
     return request(url)
   }
 }
+
+const getRelativeTime = (date) => {
+  const units = [
+    { name: 'year', value: 31536000000 },
+    { name: 'month', value: 2592000000 },
+    { name: 'day', value: 86400000 },
+    { name: 'hour', value: 3600000 },
+    { name: 'minute', value: 60000 },
+    { name: 'second', value: 1000 }
+  ]
+  
+  const diff = date - new Date()
+  
+  for (const unit of units) {
+      const value = Math.round(diff / unit.value)
+      if (value) return new Intl.RelativeTimeFormat('en', { numeric: 'auto' }).format(value, unit.name)
+  }
+  
+  return 'just now'
+};
